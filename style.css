@@ -1,0 +1,146 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Press Start 2P', cursive;
+  line-height: 1.8rem;
+  color: white;
+}
+/* ==== UTILS ==== */
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.text-small {
+  font-size: 0.7rem;
+}
+.modal {
+  margin: 0 3rem;
+  top: 35vh;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.fade-out {
+  opacity: 0;
+}
+.fade-in {
+  opacity: 1;
+}
+
+/* ==== MODAL ==== */
+.modal-container {
+  padding: 1.2rem 1.2rem 1.2rem 3rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: #000;
+}
+.modal-container img{
+  border: 5px solid white;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.modal-container-close {
+  align-self: flex-start;
+  font-size: 2rem;
+  background-color: #9e3641;
+  border: 0.2rem solid white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;;
+}
+
+.modal-container-close:hover{
+  cursor: pointer;
+  background-color: #7a2830;
+}
+
+
+.container-bg {
+    /* The image used */
+    background-image: url("images/bg.gif");
+    height: 100%;
+
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ==== BALLOT ==== */
+.ballot {
+  margin-top: 3rem;
+  flex-direction: column;
+  min-width: 33vw;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  /* margin: 0 auto; */
+}
+.inner-border {
+  border: 1px dashed #fff;
+  min-width: 350px;
+}
+
+.ballot-logo img {
+  height: 100px;
+  border: 2px dashed #fff;
+  border-radius: 50%;
+}
+
+/* BG-pattern */
+.pattern3 {
+  background-image: repeating-linear-gradient(-26deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 2px, transparent 3px, transparent 7px);
+  background-color: darkgray;
+  background-size: 6px 8px;
+}
+.input-font {
+  font-family: 'Indie Flower', cursive;
+  font-size: 2rem;
+}
+
+.check-candidate {
+  line-height: 1.3rem;
+  text-align: center;
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.3rem;
+
+  border: 2px dashed #fff;
+}
+.btn {
+  padding: 0.3rem 2rem;
+  margin: 1rem;
+  border-radius: 5px;
+}
+.btn:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.btn-green {
+  background-color: green;
+}
+
+.btn-red {
+  background-color: #7a2830;;
+}
